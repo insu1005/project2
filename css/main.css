@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* main common -S */
+.sec{ 
+    min-width: 1280px; 
+    padding: 130px 0 218px; 
+  }
+  .sec-header{ text-align: center;}
+  .sec-header > .tit {  font-weight: 800; font-size: 55px; line-height: 60px;}
+  .sec-header > .tit > strong { color:#f47e33;}
+  .sec-header > .description {
+    margin: 14px auto 75px; 
+    font-size: 24px; line-height: 28px; color: #777;
+  }
+   /* main common -E */
+.big-visual-content {width: 100%; height: 860px;}
