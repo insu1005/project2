@@ -2,7 +2,7 @@
 
 /* main common -S */
 .sec{ 
-    min-width: 1280px; 
+    min-width: 1280px; border: 1px solid #f00;
     padding: 130px 0 218px; 
   }
   .sec-header{ text-align: center;}
@@ -13,4 +13,43 @@
     font-size: 24px; line-height: 28px; color: #777;
   }
    /* main common -E */
-.big-visual-content {width: 100%; height: 860px;}
+.big-visual-wrap {
+  width: 100%;
+  background-color: #000;
+}
+.big-visual-content {
+  width: 100%; height: 860px;
+  opacity: 0.7;
+}
+
+/*  */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mySwiper {
+  width: 490px; height: 300px; 
+  border: 10px solid #ff0; 
+  box-sizing: border-box;
+}
+.mySwiper2 {width: 567px; height: 491px;}
+
+.swiper-button-next::after { color:#fff; transition:all 0.3s; animation: heart-beat 1.5s infinite;}
+.swiper-button-next:hover::after { transform: scale(1.2);}
+
+@keyframes heart-beat{
+  0%{ transform: scale(1);}
+  50%{ transform: scale(1.3);}
+  100%{ transform: scale(1);}
+
+}
+
+
+
+

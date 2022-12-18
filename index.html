@@ -11,6 +11,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.vide.js"></script>
     <!-- big-visual link-e-->
+    <!-- slide link-s -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- slide link-e -->
     <title>오구쌀피자</title>
 </head>
 <body>
@@ -84,16 +88,50 @@
     </div>
     </header>
     <main>
-        <section class="big-visual sec">
-            <figure class="big-visual-wrap">
-                <div data-vide-bg="video/big-visual" class="big-visual-content"></div>
-            </figure>
-        </section>
+        <figure class="big-visual-wrap">
+            <div data-vide-bg="video/big-visual" class="big-visual-content"></div>
+        </figure>
         <section class="pizza-menu sec">
             <div class="inner">
                 <div class="sec-header">
                     <h3 class="tit"></h3>
                     <p class="description"></p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-wrap">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>    
                 </div>
             </div>
         </section>
@@ -160,4 +198,26 @@
         </div>
     </footer>
 </body>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+        swiper: swiper,
+        },
+    });
+  </script>
 </html>
