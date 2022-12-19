@@ -3,7 +3,7 @@
 .skip-nav-tit{ 
     width: 100%; height: 30px; 
     text-align: center; line-height: 30px; color:#fff; 
-    background-color: #f47e33;
+    background-color: #e02d3c;
     position: absolute; left: 0; top: -100px; z-index: 20;
   }
   .skip-nav-tit:focus{top: 0;}
@@ -20,9 +20,40 @@
     position: absolute; left: -9999px; top:0;
     overflow: hidden;
   }
-  .clearfix::after {
-    content: ""; 
+  .clearfix::after {content: ""; 
     display: block; 
     clear: both;
   }
-  /* common -E */
+/* common -E */
+.inner{border: 1px solid #f00;}
+/* header -s */
+.header { 
+  position: absolute; left: 0; top: 0; border: 1px solid #f00; z-index: 10;
+  width: 100%; min-width: 1280px;
+  padding-top: 82px;
+  font-weight: 700; font-size: 22px; color: #fff;
+}
+.logo{ 
+  float: left;
+  width: 210px; height: 42px;
+  text-indent: -9999px;
+  margin-right: 130px;
+}
+.logo a {
+  display: block;
+  width: 100%; height: 100%;
+  background-image: url(../img/logo.png);
+}
+.gnb { float: left;}
+.depth1 {
+  float: left;
+}
+.depth1 a { padding: 0 55px;}
+.tnb { 
+  float: right;
+  position: absolute; right: 0; top:0;
+}
+.tnb li {float: left;}
+/* header -E */
+/* footer -s */
+/* footer -E */

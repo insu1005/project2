@@ -2,16 +2,21 @@
 
 /* main common -S */
 .sec{ 
-    min-width: 1280px; border: 1px solid #f00;
-    padding: 130px 0 218px; 
+    min-width: 1280px; 
+    padding: 170px 0 110px; 
   }
-  .sec-header{ text-align: center;}
-  .sec-header > .tit {  font-weight: 800; font-size: 55px; line-height: 60px;}
-  .sec-header > .tit > strong { color:#f47e33;}
+  .sec-header > .tit {
+    display: inline-block;
+    margin-right: 30px;  
+    font-weight: 800; font-size: 60px; line-height: 60px;
+  }
+  .sec-header > .tit > strong { color:#e02d3c;}
   .sec-header > .description {
+    display: inline-block;
     margin: 14px auto 75px; 
-    font-size: 24px; line-height: 28px; color: #777;
+    font-weight: 700; font-size: 24px; line-height: 22px; color: #333;
   }
+  .sec-header > .description > strong { color: #fd6f0a;}
    /* main common -E */
 .big-visual-wrap {
   width: 100%;

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, b, u, i, dl, dt, dd, ol, ul, li,
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, address, em, img, b, u, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, 
 menu, nav, section, mark, audio, video{
 	margin: 0; padding: 0;
