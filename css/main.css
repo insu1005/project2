@@ -20,7 +20,7 @@
 /* main common -E */
 /* big-visual -s */
 .big-visual-wrap {
-  width: 100%;
+  width: 100%; height: 860px;
   background-color: #000;
 }
 .big-visual-content {
@@ -50,6 +50,86 @@
   box-sizing: border-box;
   position: absolute; left: -300px; top: 0;
 }
+.mySwiper .swiper-slide {padding-top: 85px;}
+.mySwiper p {color: #fff; } 
+.mySwiper p > strong { font-size: 36px; transition: all 0.3s;}
+.mySwiper a > p {line-height: 44px; transition: all 0.3s;}
+.mySwiper a > div { 
+  width: 200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(42px);
+  transition: all 0.3s;
+}
+.mySwiper a > div > p { 
+  float: left; 
+  margin-left: 35px;
+}
+.mySwiper a > .just { width: 280px; }
+.shrimp p::before {content: "";
+  display: block;
+  width: 57px; height: 59px;
+  background-image: url(/img/shrimp.png);
+  position: absolute; left: 30px; top: -70px;
+}
+.shrimp p:nth-child(2):before {content: "";
+  display: block;
+  width: 60px; height: 67px;
+  background-image: url(/img/chicken.png);
+  position: absolute; left: 120px; top: -70px;
+}
+.shrimp p:nth-child(3):before {content: "";
+  display: block;
+  width: 60px; height: 59px;
+  background-image: url(/img/sauce.png);
+  position: absolute; left: 210px; top: -70px;
+}
+.omulet p::before {content: "";
+  display: block;
+  width: 65px; height: 78px;
+  background-image: url(/img/omulet.png);
+  position: absolute; left: 23px; top: -90px;
+}
+.omulet p:nth-child(2):before {content: "";
+  display: block;
+  width: 86px; height: 70px;
+  background-image: url(/img/chickenball.png);
+  position: absolute; left: 93px; top: -90px;
+}
+.corn p:nth-child(1):before {content: "";
+  display: block;
+  width: 65px; height: 78px;
+  background-image: url(/img/omulet.png);
+  position: absolute; left: 23px; top: -90px;
+}
+.corn p:nth-child(2):before {content: "";
+  display: block;
+  width: 80px; height: 52px;
+  background-image: url(/img/corn.png); background-size: contain;
+  position: absolute; left: 93px; top: -70px;
+}
+.vegetable p:nth-child(1):before {content: "";
+  display: block;
+  width: 80px; height: 58px;
+  background-image: url(/img/sweet.png); background-size: contain; background-repeat: no-repeat;
+  position: absolute; left: 0px; top: -70px;
+}
+.vegetable p:nth-child(2):before {content: "";
+  display: block;
+  width: 80px; height: 58px;
+  background-image: url(/img/pumkin.png); background-size: contain; background-repeat: no-repeat;
+  position: absolute; left: 93px; top: -70px;
+}
+.vegetable p:nth-child(3):before {content: "";
+  display: block;
+  width: 80px; height: 58px;
+  background-image: url(/img/cheese.png); background-size: contain; background-repeat: no-repeat;
+  position: absolute; left: 180px; top: -70px;
+}
+.mySwiper:hover p strong { color: #ffff00;}
+.mySwiper:hover a > p { transform: translateY(-50px);}
+.mySwiper:hover a > div { opacity: 1; transform: translateY(30px);}
+
 .mySwiper2 {
   width: 567px; height: 491px;
   border: 10px solid #ff0; border-radius: 39px;
@@ -57,7 +137,7 @@
   box-sizing: border-box;
   position: absolute; left: 300px; top: -300px;
 }
-.swiper-button-wrap{ border: 1px solid #f00;
+.swiper-button-wrap{ 
   width: 100px; height: 40px;
   position: absolute;  left: 330px; top: 470px;
 }
