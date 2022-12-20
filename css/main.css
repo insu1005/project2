@@ -51,9 +51,12 @@
   position: absolute; left: -300px; top: 0;
 }
 .mySwiper .swiper-slide {padding-top: 85px;}
-.mySwiper p {color: #fff; } 
+.mySwiper p { color: #fff; } 
 .mySwiper p > strong { font-size: 36px; transition: all 0.3s;}
-.mySwiper a > p {line-height: 44px; transition: all 0.3s;}
+.mySwiper a > p { 
+  font-size: 24px; line-height: 44px; 
+  transition: all 0.3s;
+}
 .mySwiper a > div { 
   width: 200px;
   margin: 0 auto;
@@ -127,7 +130,7 @@
   position: absolute; left: 180px; top: -70px;
 }
 .mySwiper:hover p strong { color: #ffff00;}
-.mySwiper:hover a > p { transform: translateY(-50px);}
+.mySwiper:hover a > p { transform: translateY(-70px);}
 .mySwiper:hover a > div { opacity: 1; transform: translateY(30px);}
 
 .mySwiper2 {
@@ -136,6 +139,32 @@
   background-color: #fd6f0a;
   box-sizing: border-box;
   position: absolute; left: 300px; top: -300px;
+  transition: all 0.3s;
+}
+.mySwiper2 .content {
+  width: 100%;
+  padding-top: 57px;
+  position: relative;
+  overflow: hidden;
+}
+.mySwiper2 .alarm {
+  box-sizing: border-box;
+  width: 95px; height: 230px;
+  padding-right: 20px;
+  border-radius: 0 0 0 36px ;
+  background-color: #fff; 
+  font-weight: 800; font-size: 48px; color:#fd6f0a; writing-mode: vertical-rl; text-orientation: upright;
+  position: absolute; right: -10px; top: -1px; z-index: 10;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.price-tag { opacity: 0; transition: all 0.3s;}
+.price-tag span { font-weight: 800; font-size: 36px; color: #fff;}
+.mySwiper2 .move {transition: all 0.3s;}
+.mySwiper2 img {
+  width: 375px; height: 380px;
+  margin: 0 auto;
+  transition: all 0.3s;
 }
 .swiper-button-wrap{ 
   width: 100px; height: 40px;
@@ -150,7 +179,11 @@
 }
 .swiper-button-next::after {display: none;}
 .swiper-button-prev::after {display: none;}
-
+.mySwiper2:hover {background-color: #e02d3c;}
+.mySwiper2:hover .move{ transform: translate( -150px, -150px); }
+.mySwiper2:hover img{ transform: scale(1.5);}
+.mySwiper2:hover .alarm {opacity: 1;}
+.mySwiper2:hover .price-tag {transform: translateY(-30px); opacity: 1;}
 @keyframes heart-beat{
   0%{ transform: scale(1);}
   50%{ transform: scale(1.3);}
@@ -159,9 +192,114 @@
 .swiper-button-next:hover{  animation: heart-beat 1s infinite;}
 .swiper-button-prev:hover{  animation: heart-beat 1s infinite;}
 /*pizza-menu sec -e*/
+
 /* interview sec -s */
 .interview { padding-top: 0;}
+.video-box {width: 320px; height: 295px;}
+.interview-box { 
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.interview-box + .interview-box { margin-left: 100px;}
+.name-tag { 
+  box-sizing: border-box;
+  width: 100%; height: 70px;
+  padding-top: 10px;
+  background-color: #e02d3c;
+  font-size:22px; font-weight: 700; line-height: 26px; color: #fff; text-align: center;
+  position: absolute; left: 0; bottom: 125px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.interview-description { 
+  box-sizing: border-box;
+  padding-top: 25px;
+  width: 100%; height: 125px;
+  background-color: #fd6f0a;
+  color: #fff;
+}
+.interview-description h4 {
+  margin-bottom: 25px;
+  font-weight: 800; font-size: 30px; line-height: 34px; text-align: center;
+  /* transform: translateX(-100%); */
+  animation: move 8s infinite;
+  animation-timing-function: linear;
+}
+.interview-description p { font-size: 18px; line-height: 22px; text-align: center;}
+.interview-box:hover .name-tag{opacity: 1;}
+@keyframes move{ 
+  0%{ transform: translateX(-100%);}
+  100%{ transform: translateX(100%);}
+}
 /* interview sec -e */
+
+/* brand sec -s */
+.brand { background-image: url(/img/brand-bg.png); background-position: center center;}
+.brand .tit {color:#fff}
+.brand .tit strong {color:#ffff00}
+.brand .description {color: #fff;}
+.brand .description strong {color: #000;}
+.brand-box {
+  box-sizing: border-box;
+  float: left; 
+  width: 378px; height: 460px;
+  padding-top: 310px;
+  background-image: url(/img/dough.png);
+  position: relative;
+}
+.brand-box + .brand-box {margin-left: 70px;}
+.cheese {background-image: url(/img/orgnic.png);}
+.ingredient {background-image: url(/img/ingredient.png);}
+
+.brand-box div { 
+  box-sizing: border-box;
+  width: 100%; height: 152px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.brand-box h5 { 
+  font-weight: 700; font-size: 24px; line-height: 28px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.brand-box p { 
+  font-size: 18px; line-height: 24px;  
+  transition: all 0.3s;
+}
+.more { 
+  box-sizing: border-box;
+  display: block;
+  width: 180px; height: 72px;
+  border: 4px solid #fff; border-radius: 20px;
+  font-weight: 700; font-size: 36px; line-height: 72px; color: #fff; text-align: center;
+  position: absolute; left: 100px; top:200px; z-index: 10;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.more::before{content: "";
+  display: block;
+  width: 110px; height: 110px;
+  background-image: url(/img/brand-is.png);
+  position: absolute; left: 32px; top: -150px;
+}
+.cheese .more::before {background-position: -110px 0;}
+.ingredient .more::before {background-position: -220px 0;}
+.brand-box:hover div { background-color: #e02d3c;}
+.brand-box:hover h5 { color: #fff;}
+.brand-box:hover p { color: #ff0;}
+.brand-box:hover .more { 
+  top: 190px; 
+  opacity: 1;
+}
+.more:hover {
+  background-color: #fff;
+  color: #e02d3c;
+}
+
+/* brand sec -e */
 
 
 
