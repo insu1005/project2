@@ -47,8 +47,3 @@
     margin-bottom: 25px;
 }
 .sub-description{ font-size: 24px; line-height: 28px; text-align: center;}
-.box-wrap:before {content: "";
-    display: block;
-    width: 530px; height: 400px;
-    background-image: url(/img/sub-img/dough.png);
-}

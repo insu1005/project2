@@ -2,6 +2,7 @@
 
 .visual { background-image: url(/img/sub-img/sub1-1-visual.png);}
 
+/* brand -s */
 .big-box-wrap { 
     box-sizing: border-box;
     margin-bottom:170px; padding-top: 142px;
@@ -10,19 +11,59 @@
 .box-wrap::before {content: "";
     display: block;
     width: 530px; height: 400px;
+    margin-right: 60px;
     background-image: url(/img/sub-img/dough.png);
     float: left;
 }
 .box-wrap:nth-child(2)::before {content: "";
     display: none;
 }
-.box-wrap:nth-child(2)::after {content: "";
-    display: block;
+.box-wrap:nth-child(2) .empty {
     width: 530px; height: 400px;
-    background-image: url(/img/sub-img/dough.png);
+    background-image: url(/img/sub-img/organic-box.png);
     float: right;
 }
+.box-wrap:nth-child(3)::before { background-image: url(/img/sub-img/good-ingredient.png);}
 
-.box-wrap-regular{ float: left;}
-.box-wrap-tit { }
-.box-wrap-description{}
+.box-wrap-regular{ 
+    float: left;
+    box-sizing: border-box;
+    width: 690px;
+    padding-top: 50px;
+}
+.box-wrap:nth-child(2) .box-wrap-regular{ 
+    float: left;
+    box-sizing: border-box;
+    width: 620px;
+    padding-left: 60px;
+}
+.box-wrap:nth-child(2) .box-wrap-regular .box-wrap-tit strong { font-weight: 800; color: #ff6101;}
+.box-wrap:nth-child(2) .box-wrap-regular .box-wrap-tit em { font-weight: 800; font-size: 45px; color: #e02d3c;}
+.box-wrap-tit { 
+    font-weight: 700; font-size: 45px; line-height: 49px; color: #333;
+    margin-bottom: 60px;
+}
+.box-wrap-description { 
+    color: #777
+
+}
+.box-wrap-tit strong { font-weight: 800; color:#e02d3c}
+.box-wrap-description strong{ 
+    display: block;    
+    font-weight: 400; font-size: 24px; line-height: 28px;
+}
+.box-wrap-description em{ 
+    display: block;
+    font-size: 24px; line-height: 28px;
+}
+.box-wrap-description p{ 
+    display: block;
+    font-size: 24px; line-height: 28px;
+}
+.box-wrap-description p:nth-of-type(2){ color: #e02d3c;}
+/* brand -e */
+
+/* identity -s */
+.identity-tit { float: left;}
+.identity-common img {float: left;}
+/* identity -e */
