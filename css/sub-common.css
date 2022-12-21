@@ -37,13 +37,9 @@
     background-color: #d4261f;
     color: #ff0;
 }
-/* .lnb .lnb-list li.on a { 
-    background-color: #d4261f; 
-    color: #ff0;
-} */
 /* lnb -E */
 .sub-tit{ 
-    font-weight: 800; font-size: 60px; line-height: 64px; text-align: center;
     margin-bottom: 25px;
+    font-weight: 800; font-size: 60px; line-height: 64px; text-align: center;
 }
 .sub-description{ font-size: 24px; line-height: 28px; text-align: center;}

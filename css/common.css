@@ -113,8 +113,8 @@ footer{
 }
 .f-menu{ 
   float: left;
-  font-size: 14px; color: #999;
   margin-bottom: 15px;
+  font-size: 14px; color: #999;
 }
 .f-menu li {
   float: left; 
@@ -142,7 +142,10 @@ footer{
   background-position: -20px;
 }
 .f-sns li:nth-child(3) a{ background-position: -49px;}
-.f-sns li:nth-child(4) a{ width: 19px; background-position: -69px;}
+.f-sns li:nth-child(4) a{ 
+  width: 19px; 
+  background-position: -69px;
+}
 .f-sns li:nth-child(5) a{ background-position: -89px;}
 .franchise{ float: right; }
 .franchise p:first-child {
