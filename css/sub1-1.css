@@ -64,6 +64,56 @@
 /* brand -e */
 
 /* identity -s */
-.identity-tit { float: left;}
+.identity-common { margin-bottom: 155px;}
+.identity-common:nth-child(2) {margin-bottom: 52px;}
+.identity-tit { border:1px solid #f00;
+    float: left;
+    width: 310px; height: 111px;
+    margin-right: 115px;
+    font-weight: 700; font-size: 45px; line-height: 111px; color:#555;
+}
 .identity-common img {float: left;}
+.identity-common p {
+    float: left;
+    margin-right: 70px;
+    text-align: center;
+    font-size: 24px; line-height: 28px; color: #555;
+}
+.identity-common p::before {content:"";
+    display: block;
+    width: 200px; height: 80px;
+    background-image: url(/img/sub-img/red.png);
+    margin-bottom: 15px;
+}
+.identity-common p:nth-child(2):before{
+    background-image: url(/img/sub-img/orange.png);
+}
+.identity-common p:nth-child(3):before{
+    background-image: url(/img/sub-img/yelllow.png);
+}
+.identity-description{
+    font-size: 24px; line-height: 28px; color: #555;
+}
 /* identity -e */
+
+/* interior -s */
+.interior-wrap img { 
+    display: block;
+    width: 460px; height: 274px;
+    margin: 0 auto 40px; 
+}
+.interior-description strong { 
+    display: block;
+    margin-bottom: 34px;
+    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+}
+.interior-description em {
+    display: block; 
+    margin-bottom: 34px;
+    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+}
+.interior-description p { 
+    margin-bottom: 34px;
+    font-weight: 400; font-size: 24px; line-height: 34px; color: #555;
+}
+/* interior -e */
