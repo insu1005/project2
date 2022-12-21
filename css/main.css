@@ -412,6 +412,15 @@ input::placeholder {
 }
 .hot-event-tit strong{ font-weight: 800;  font-size: 30px;  color:#fd6f0a}
 .hot-event-tit span{ font-weight: 800; font-size: 30px; color:#e02d3c}
+.hot-event .hot-more { 
+  display: block;
+  background-color: #e0e0e0;
+  width: 404px; height: 75px;
+  font-weight: 800; font-size: 30px; color: #e02d3c; line-height: 75px; text-align: center;
+  transform: translateY(-78px);
+  opacity: 0;
+  transition: all 0.3s;
+}
 .event {
   box-sizing: border-box;
   float: left;
@@ -430,7 +439,7 @@ input::placeholder {
 }
 .event .event-list {
   box-sizing: border-box; 
-  float: left; border: 1px solid #f00;
+  float: left;
   padding-top: 40px;
 }
 .event .event-list li {
@@ -445,7 +454,7 @@ input::placeholder {
   opacity: 0;
   transition: all 0.3s;
 }
-.event .event-list li a { font-size: 14px; line-height: 18px; color: #333; }
+.event .event-list li a { font-weight: 700; font-size: 14px; line-height: 18px; color: #333; }
 .event-more {
   font-size: 18px; line-height: 22px;
   position: absolute; right: 150px; top: 190px;
@@ -458,6 +467,7 @@ input::placeholder {
   position: absolute; right: -20px; top: 3px;
   transition: all 0.3s;
 }
+.hot-event:hover .hot-more { opacity: 1;}
 .event .event-list li:hover::before { opacity: 1;}
 .event-more:hover { font-weight: 800; color:#e02d3c}
 .event-more:hover::after {transform: rotate(45deg);}
