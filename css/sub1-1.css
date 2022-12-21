@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.visual { background-image: url(/img/sub-img/sub1-1-visual.png);}
+
+.big-box-wrap { 
+    box-sizing: border-box;
+    margin-bottom:170px; padding-top: 142px;
+}
+.box-wrap {margin-bottom: 80px;}
+.box-wrap::before {content: "";
+    display: block;
+    width: 530px; height: 400px;
+    background-image: url(/img/sub-img/dough.png);
+    float: left;
+}
+.box-wrap:nth-child(2)::before {content: "";
+    display: none;
+}
+.box-wrap:nth-child(2)::after {content: "";
+    display: block;
+    width: 530px; height: 400px;
+    background-image: url(/img/sub-img/dough.png);
+    float: right;
+}
+
+.box-wrap-regular{ float: left;}
+.box-wrap-tit { }
+.box-wrap-description{}
