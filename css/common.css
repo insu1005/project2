@@ -35,7 +35,7 @@ header {
 }
 .logo{ 
   float: left;
-  width: 210px; height: 42px;
+  width: 210px; height: 72px;
   text-indent: -9999px;
   margin-right: 130px;
 }
@@ -46,7 +46,7 @@ header {
 }
 .gnb {
   float: left;
-  padding-top: 12px;
+  padding-top: 35px;
 }
 .gnb a { font-size: 22px; font-weight: 700;}
 .depth1 { 
@@ -106,7 +106,7 @@ footer{
 }
 .f-logo{ 
   float: left;
-  width: 210px; height: 42px;
+  width: 210px; height: 72px;
   margin-right: 20px;
   text-indent: -9999px;
   background-image: url(/../img/logo.png); background-position: -419px 0;
@@ -150,7 +150,7 @@ footer{
 .franchise{ float: right; }
 .franchise p:first-child {
   margin: 0 0 30px 145px;
-  color: #777;
+  color: #999;
   position: relative;
 }
 .franchise p:first-child::before{content:"";
@@ -161,7 +161,7 @@ footer{
 }
 .franchise p:last-child {
   margin-left: 10px;
-  color: #555;
+  color: #777;
 }
 .f-copy{
   float: left;
