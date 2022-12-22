@@ -71,12 +71,12 @@ header {
   width: 100%;
 } 
 .depth2 { 
+  display: none;
   border-radius: 36px;
   padding: 10px 0;
   width: 100%;
   background-color: #d4261f;
   position: absolute; left: 0; top: 40px;
-  opacity: 0;
   transition: all 0.5s;
 }
 .depth2 a{
@@ -94,7 +94,7 @@ header {
 .tnb a { transition: all 0.5s;}
 .tnb li:nth-child(2) {display: none;}
 .depth1:hover::after{transform: scaleX(1);}
-.depth1:hover .depth2 {opacity: 1;}
+.depth1:hover .depth2 {display: block;}
 .depth2 a:hover { color: #f0ff00;}
 .tnb a:hover {color: #f0ff00;}
 /* header -E */
