@@ -66,7 +66,7 @@
 /* identity -s */
 .identity-common { margin-bottom: 155px;}
 .identity-common:nth-child(2) {margin-bottom: 52px;}
-.identity-tit { border:1px solid #f00;
+.identity-tit { 
     float: left;
     width: 310px; height: 111px;
     margin-right: 115px;
@@ -82,14 +82,14 @@
 .identity-common p::before {content:"";
     display: block;
     width: 200px; height: 80px;
-    background-image: url(/img/sub-img/red.png);
+    background-color: #d4261f;
     margin-bottom: 15px;
 }
 .identity-common p:nth-child(2):before{
-    background-image: url(/img/sub-img/orange.png);
+    background-color: #f39800;
 }
 .identity-common p:nth-child(3):before{
-    background-image: url(/img/sub-img/yelllow.png);
+    background-color: #edbe16;
 }
 .identity-description{
     font-size: 24px; line-height: 28px; color: #555;
